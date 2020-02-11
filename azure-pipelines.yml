@@ -6,11 +6,11 @@ variables:
   releaseBranchName: 'release'
 
 schedules:
-    - cron: '05 11 * * *'
+    - cron: '10 11 * * *'
       displayName: Deploy every day at 3 A.M.
       branches:
         include:
-        - $(releaseBranchName)
+        - release 
       always: true  
 
 stages:
